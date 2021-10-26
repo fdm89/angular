@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+
+}
+
+.main-container{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+app-user-container {
+  background-color: aquamarine;
+  width: 50%;
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  padding: 10px;
+  padding-top: 50px;
+  gap: 20px;
+
+}
+
+app-order-container {
+  background-color: pink;
+  width: 50%;
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+app-user-list {
+  background-color: green;
+  padding: 10px;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+app-user-detail {
+  width: 50%;
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 10px;
+}
+
+app-user-single {
+  background-color: tomato;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+
+}
+
+app-order-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  background-color: turquoise;
+  height: 100%;
+  gap: 5px;
+}
+
+app-order-single {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  background-color: violet;
+}
+
+app-order-single app-user-single {
+  width: 50%;
+}
+
+app-order-detail {
+  background-color: yellowgreen;
+  width: 50%;
+}

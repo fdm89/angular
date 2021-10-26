@@ -1,0 +1,16 @@
+{
+  "name": "2._typescript_esercizio_2",
+  "version": "1.0.0",
+  "description": "Creare una classe che implementi l'interfaccia dell'esercizio precedente ed esponga un metodo che restituisca il fullName",
+  "main": "index.js",
+  "dependencies": {
+    "tsc": "^2.0.3",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
