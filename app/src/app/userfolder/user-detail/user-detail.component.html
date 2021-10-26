@@ -1,1 +1,20 @@
 <p>user-detail works!</p>
+<p>id:{{obj.id}}</p>
+<p>name:{{obj.name}}</p>
+<p>surname:{{obj.surname}}</p>
+<p>age:{{obj.age}}</p>
+<p>date of birth:{{obj.dateOfBirth}}</p>
+<p><b>Address:</b></p>
+<p>city:{{obj.address.city}}</p>
+<p>street:{{obj.address.street}}</p>
+<p>postalcode:{{obj.address.postalCode}}</p>
+<p>role:{{obj.role}}</p>
+<p>username:{{obj.username}}</p>
+<img width="100px" height="100px" [src]="obj.profilePhotoUrl">
+<p>gender:{{obj.gender}}</p>
+<div *ngFor="let company of obj.companies">
+<p>Company:{{company.name}}</p>
+<p>desciption:{{company.description}}</p>
+</div>
+
+
