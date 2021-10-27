@@ -1,11 +1,16 @@
 export enum role {
-  staff="staff",
-  student="student",
-  manager="manager",
-  admin="admin"
+  STAFF = "staff",
+  STUDENT = "student",
+  MANAGER = "manager",
+  ADMIN = "admin",
+  staff = "staff"
 }
 //type role = "staff"|"student"|"manager"|"admin";
-export type gender = "male"|"female"|"other";
+export enum gender {
+MALE="male",
+FEMALE="female",
+OTHER="other"
+}
 export interface Company {
 
       id: number,
@@ -31,6 +36,6 @@ address: {
 role: role,
 username: string,
 profilePhotoUrl: string,
-companies: Company[],
+companies?: Company[],
 gender: gender,
 }

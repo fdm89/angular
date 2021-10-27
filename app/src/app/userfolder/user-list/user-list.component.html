@@ -1,3 +1,6 @@
-<app-user-single></app-user-single>
-<app-user-single></app-user-single>
-<app-user-single></app-user-single>
+<ol>
+  <li *ngFor="let user of users" (click)="selectUser(user)"><img width="100px" height="100px" [src]="user.profilePhotoUrl">{{user.name}} {{user.age}} {{user.address.city}} </li>
+</ol>
+
+
+
