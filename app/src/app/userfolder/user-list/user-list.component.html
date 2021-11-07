@@ -1,2 +1,5 @@
-<app-user-single [users]="users" (removed)="removedComponet($event)"></app-user-single>
+<app-user-single *ngIf="users.length > 0; else noUser" [users]="users" (removed)="removedComponet($event)"></app-user-single>
+<ng-template #noUser>
+  Non sono presenti utenti
+</ng-template>
 
