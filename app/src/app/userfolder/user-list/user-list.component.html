@@ -1,6 +1,2 @@
-<ol>
-  <li *ngFor="let user of users" (click)="selectUser(user)"><img width="100px" height="100px" [src]="user.profilePhotoUrl">{{user.name}} {{user.age}} {{user.address.city}} </li>
-</ol>
-
-
+<app-user-single [users]="users" (removed)="removedComponet($event)"></app-user-single>
 

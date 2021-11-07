@@ -7,7 +7,7 @@ import { gender, role, User } from 'src/app/models/User';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
- users= [
+ users:User[]= [
     {
         id: 3487,
         name: 'Mario',
@@ -59,9 +59,17 @@ export class UserListComponent implements OnInit {
   ];
   constructor() { }
 
-  selectUser(user:User){
-   console.log(user)
-  }
+removedComponet(user:User){
+  this.users = this.users.filter(item =>  item.id != user.id);
+  console.log("clicked");
+
+
+  ;
+
+
+
+}
+
 
   ngOnInit(): void {
   }
