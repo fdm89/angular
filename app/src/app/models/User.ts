@@ -2,8 +2,7 @@ export enum role {
   STAFF = "staff",
   STUDENT = "student",
   MANAGER = "manager",
-  ADMIN = "admin",
-  staff = "staff"
+  ADMIN = "admin"
 }
 //type role = "staff"|"student"|"manager"|"admin";
 export enum gender {
